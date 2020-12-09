@@ -1,0 +1,17 @@
+.shipment-card {
+    margin-bottom: 1rem;
+    overflow: hidden;
+
+    & li {
+        padding: 5px 2px;
+        & section {
+            & .cargo-boxes {
+                border: solid 2px #000;
+            }
+        }
+
+        & a {
+            font-size: 0.8em;
+        }
+    }
+}

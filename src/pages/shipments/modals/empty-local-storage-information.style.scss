@@ -1,0 +1,50 @@
+.modal {
+    background-color: #3d3c40;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 4;
+    top: 10%;
+    left: 0;
+    right: 0;
+    height: 150px;
+    max-width: 80%;
+    margin: 0 auto;
+
+    & .cancel-btn {
+        background-color: #ee6a5f;
+        cursor: pointer;
+        border-radius: 50%;
+        padding: 5px;
+        width: 5px;
+        height: 5px;
+    }
+
+    & h3 {
+        color: #fff;
+        flex-grow: 3;
+        padding-top: 1em;
+        font-weight: 100;
+    }
+
+    & .btns-wrapper {
+        & button {
+            border: 0;
+            border-radius: 3px;
+            padding: 5px 10px;
+            margin-right: 10px;
+            width: 100px;
+            height: 30px;
+
+            &:nth-child(1) {
+                background-color: #ffa500;
+            }
+
+            &:nth-child(2) {
+                background-color: #008000;
+            }
+        }
+    }
+}

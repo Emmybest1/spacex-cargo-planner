@@ -1,0 +1,69 @@
+$backgroundColor: #18203d;
+
+/********************************
+ *general settings
+ ********************************/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+}
+
+a {
+    color: #1e90ff;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+    cursor: pointer;
+}
+
+/********************************
+ *layout settings
+ ********************************/
+.container {
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+}
+
+#mainLocator {
+    background-color: #dddddd;
+    color: #000;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    left: -1000px;
+    position: absolute;
+    z-index: 2;
+}
+
+#mainLocator:focus {
+    top: 5px;
+    left: 0;
+}
+
+@mixin display-flex($direction, $justifyContent, $alignContent, $alignItems) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-content: $alignContent;
+    align-items: $alignItems;
+}

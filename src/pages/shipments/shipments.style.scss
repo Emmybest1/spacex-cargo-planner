@@ -1,0 +1,35 @@
+@import "../../app.style.scss";
+
+.shipments-container .shipments-container__main {
+    @include display-flex(row, space-between, "", "");
+
+    & .left-navigation-wrapper {
+        background-color: #fff;
+        border-right: solid 2px #dddddd;
+        overflow: scroll;
+        margin-top: 30px;
+        height: 100vh;
+        width: 30%;
+
+        & * {
+            color: #000;
+        }
+
+        & nav ul {
+            & li {
+                font-size: 0.8em;
+                padding-top: 15px;
+
+                & .company-name-achor {
+                    color: #1e90ff;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    & .main-content-wrapper {
+        width: 70%;
+        margin-top: 40px;
+    }
+}
